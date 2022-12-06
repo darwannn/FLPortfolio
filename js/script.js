@@ -54,4 +54,7 @@ $(document).ready(function () {
       }
     });
 
+    setTimeout(function(){
+document.querySelector("html").style.overflow = "auto";
+    });
   });

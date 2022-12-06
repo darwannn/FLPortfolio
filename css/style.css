@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kenia&family=PT+Serif:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,6 @@
   list-style-type: none;
   text-decoration: none;
   line-height: .75;
-
 }
 
 html,
@@ -19,7 +18,10 @@ body {
   padding: 0;
   background-color: rgba(242, 237, 233, 1);
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
+
 
 .lg-backdrop {
   opacity: 0.8 !important;
@@ -42,8 +44,8 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(245, 55, 3, 0.364), rgba(202, 20, 24,1));
-/*   background-image: linear-gradient(to bottom, rgba(202, 20, 24,1), rgba(202, 20, 24,1)); */
+  background-color: rgb(238,233,227);
+  background-image: linear-gradient(to bottom, rgb(238,233,227), rgb(241,224,207));
   mix-blend-mode: multiply;
 }
   
@@ -56,10 +58,10 @@ body {
 
 .banner-container .banner-text {
   position: absolute;
-  top: 40%;
+  top: 48%;
   right: 50%;
   transform: translate(50%, -50%);
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -74,6 +76,7 @@ body {
   text-transform: uppercase;
   font-size: 20px;
 /*   -webkit-text-stroke: 1px white; */
+color: rgb(123,87,67);
 }
 
 .banner-container .banner-text .title {
@@ -81,8 +84,13 @@ body {
   line-height: .8;
   text-transform: uppercase;
   font-size: 70px;
-  font-weight: 700;
-margin:10px 0 50px 0;
+  font-weight: 900;
+margin:1px 0 50px 0;
+font-family: 'DM Serif Display', serif;
+letter-spacing: 2px;
+
+color: rgb(90,60,38);
+
 
 }
 
@@ -91,11 +99,13 @@ margin:10px 0 50px 0;
   line-height: 1.1;
   font-size: 25px;
   font-weight: 700;
+  color: rgb(123,87,67);
 }
 
 .banner-container .banner-text .fa-chevron-down {
   margin:50px 0 0px 0;
-  font-size: 3vw!important;
+  font-size: 2.2vw!important;
+  color: rgb(90,60,38);
 }
 
 
@@ -154,7 +164,8 @@ margin:10px 0 50px 0;
   left: 0;
   content: "";
   z-index: 10;
-  background-image: linear-gradient(to bottom, rgb(255, 103, 16), rgba(202, 20, 24,1));
+  /* background-color: rgba(170, 132, 83,0.5); */
+  background-image: linear-gradient(to bottom, rgba(121, 111, 94, 0.388), rgba(170, 132, 83, 0.766));
   pointer-events: none;
   opacity: .8;
 }
@@ -200,8 +211,8 @@ margin:10px 0 50px 0;
 .activity-container .line, .final-output-container .line {
   width: 100px;
   height: 4px;
-  background-color: rgba(202, 20, 24, 1);
-  margin: 5px 0;
+  background-color: rgb(74,45,22);
+  margin: 0px 0;
 }
 
 
@@ -209,6 +220,7 @@ margin:10px 0 50px 0;
 .final-output-container-text {
   position: relative;
   white-space: nowrap
+  
 }
 
 .final-output-container .title {
@@ -216,7 +228,9 @@ margin:10px 0 50px 0;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 700;
-  color: rgba(202, 20, 24, 1);
+  color: rgb(74,45,22);
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 2px;
 }
 .final-output-container .title:after {
 content: "Project";
@@ -227,7 +241,9 @@ top: 50%; right: 50%;
   font-size: 80px;
   font-weight: 700;
   color: transparent;
-    -webkit-text-stroke: 1px rgba(202, 20, 24, 1);
+    -webkit-text-stroke: 1px rgb(23,23,23);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
 }
 
 .activity-container-text {
@@ -240,7 +256,9 @@ top: 50%; right: 50%;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 700;
-  color: rgba(202, 20, 24, 1);
+ color: rgb(74,45,22);
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 2px;
 }
 .activity-container .title:after {
 content: "Activity";
@@ -251,7 +269,9 @@ top: 50%; right: 50%;
   font-size: 80px;
   font-weight: 700;
   color: transparent;
-    -webkit-text-stroke: 1px rgba(202, 20, 24, 1);
+    -webkit-text-stroke: 1px rgb(23,23,23);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
 }
 
 /*  */
@@ -272,23 +292,25 @@ top: 50%; right: 50%;
   position: fixed;
   bottom: 25px;
   right: 25px;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  background-color: rgba(202, 20, 24, 1);
-  border: 1px solid rgba(202, 20, 24, 1);
+  padding: 15px;
+  color: white;
+  background-color: rgb(23,23,23);
+  /* rgb(36,27,30); */
+/*   border: 1px solid rgb(23,23,23); */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: 0.5s ease-in-out;
   visibility: hidden;
 }
 
 .back-to-top .fa-chevron-up {
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 900;
 }
 
-footer {
-  height: 10px;
+footer,nav {
+  height: 15px;
   width: 100%;
-  background-color: rgba(202, 20, 24, 1);
+  background-color: rgb(23,23,23);
 }
 @media (min-width:0px) and (max-width:826px) {
   .banner-container .banner-text .activity {
@@ -312,6 +334,7 @@ footer {
     line-height: 1.1;
     font-size: 2.7vw;
     font-weight: 700;
+   
   }
   
   .banner-container .banner-text .fa-chevron-down {
@@ -374,7 +397,7 @@ margin:5px 0 20px 0;
 .activity-container .line, .final-output-container .line {
   width: 70px;
   height: 3px;
-  background-color: rgba(202, 20, 24, 1);
+  background-color: rgb(23,23,23);
   margin: 5px 0;
 }
 
@@ -390,7 +413,7 @@ margin:5px 0 20px 0;
   text-transform: uppercase;
   font-size: 9vw;
   font-weight: 700;
-  color: rgba(202, 20, 24, 1);
+  color: rgb(23,23,23);
 }
 .final-output-container .title:after {
 content: "Project";
@@ -401,7 +424,7 @@ top: 50%; right: 50%;
   font-size: 14vw;
   font-weight: 700;
   color: transparent;
-    -webkit-text-stroke: 1px rgba(202, 20, 24, 1);
+    -webkit-text-stroke: 1px rgb(23,23,23);
 }
 
 .activity-container-text {
@@ -414,7 +437,7 @@ top: 50%; right: 50%;
   text-transform: uppercase;
   font-size: 9vw;
   font-weight: 700;
-  color: rgba(202, 20, 24, 1);
+  color: rgb(23,23,23);
 }
 .activity-container .title:after {
 content: "Activity";
@@ -425,7 +448,7 @@ top: 50%; right: 50%;
   font-size: 14vw;
   font-weight: 700;
   color: transparent;
-    -webkit-text-stroke: 1px rgba(202, 20, 24, 1);
+    -webkit-text-stroke: 1px rgb(23,23,23);
 }
 
 }
