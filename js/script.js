@@ -12,6 +12,9 @@ $(document).ready(function () {
       animateThumb: false,
       caption: false,
       controls: false,
+      keyPress:false,
+      enableSwipe:false,
+      enableThumbSwipe:false,
       showThumbnailWithPlayButton: false,
       share: false,
       autoplayControls: false,
@@ -58,3 +61,58 @@ $(document).ready(function () {
 document.querySelector("html").style.overflow = "auto";
     });
   });
+
+
+  /* --------------- */
+
+  /* default */
+let selected = "fl-302";
+document.getElementById("project").style.display="none";
+document.querySelectorAll(".fl-301").forEach(function(el) {
+  el.style.display="none";
+});
+document.getElementById("fl-302-button").classList.add("active");
+
+
+
+
+document.getElementById("fl-301-button").onclick = function() {
+  selected = "fl-301";
+  update_content();
+}
+
+document.getElementById("fl-302-button").onclick = function() {
+  selected = "fl-302";
+  update_content();
+}
+
+function update_content() {
+  if (selected == "fl-301") {
+    document.querySelectorAll(".fl-301").forEach(function(el) {
+      el.style.display="block";
+     
+    });
+/*     document.querySelectorAll(".fl-301").style.display="none"; */
+  
+    document.querySelectorAll(".fl-302").forEach(function(el) {
+      el.style.display="none";
+    });
+
+    document.getElementById("fl-301-button").classList.add("active");
+    document.getElementById("fl-302-button").classList.remove("active");
+    document.getElementById("project").style.display="flex";
+   
+  } else if (selected == "fl-302") {
+    document.querySelectorAll(".fl-301").forEach(function(el) {
+      el.style.display="none";
+    });
+
+    document.querySelectorAll(".fl-302").forEach(function(el) {
+      el.style.display="block";
+    });
+
+    document.getElementById("project").style.display="none";
+    document.getElementById("fl-301-button").classList.remove("active");
+    document.getElementById("fl-302-button").classList.add("active");
+  }
+}
