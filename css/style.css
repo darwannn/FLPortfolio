@@ -39,11 +39,11 @@ body {
 
 .darwin {
   position: absolute;
-  margin-top: -100px;
+/*   margin-top: -20px; */
   /* top: 0; */
   width: 530px;
   height: 500px;
-  margin-bottom: -100px;
+  margin-bottom: 80px;
 }
 .banner-container:after {
     content: "";
@@ -109,6 +109,7 @@ color: rgb(90,60,38);
   font-size: 25px;
   font-weight: 700;
   color: rgb(123,87,67);
+  margin-top: 20px;
   z-index: 10;
 }
 
@@ -328,14 +329,14 @@ footer,nav {
     font-size: 3vw;
   /*   -webkit-text-stroke: 1px white; */
   }
-  .darwin {
-   /* display: none; */
+  /* .darwin {
+   display: none;
    
-  }
+  } */
   .darwin {
     position: absolute;
     margin-top: -100px;
-    /* top: 0; */
+
     width: 70vw;
     height: 68vw;
     margin-bottom: -100px;
