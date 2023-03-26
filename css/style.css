@@ -217,7 +217,7 @@ color: rgb(90,60,38);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding: 15px;
 }
 
 /*  */
@@ -227,6 +227,7 @@ color: rgb(90,60,38);
   height: 4px;
   background-color: rgb(74,45,22);
   margin: 0px 0;
+
 }
 
 
