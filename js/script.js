@@ -67,7 +67,8 @@ document.querySelector("html").style.overflow = "auto";
 
   /* default */
 let selected = "fl-302";
-document.getElementById("project").style.display="none";
+document.getElementById("project-301").style.display="none";
+document.getElementById("project-302").style.display="flex";
 document.querySelectorAll(".fl-301").forEach(function(el) {
   el.style.display="none";
 });
@@ -100,7 +101,8 @@ function update_content() {
 
     document.getElementById("fl-301-button").classList.add("active");
     document.getElementById("fl-302-button").classList.remove("active");
-    document.getElementById("project").style.display="flex";
+    document.getElementById("project-301").style.display="flex";
+    document.getElementById("project-302").style.display="none";
    
   } else if (selected == "fl-302") {
     document.querySelectorAll(".fl-301").forEach(function(el) {
@@ -111,7 +113,8 @@ function update_content() {
       el.style.display="block";
     });
 
-    document.getElementById("project").style.display="none";
+    document.getElementById("project-301").style.display="none";
+    document.getElementById("project-302").style.display="flex";
     document.getElementById("fl-301-button").classList.remove("active");
     document.getElementById("fl-302-button").classList.add("active");
   }
